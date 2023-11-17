@@ -15,8 +15,7 @@ model Usuario {
   nome  String
   email String @unique
   lances Lance[]
-  leiloes Leilao[]  // Adicione esta linha
-}
+  leiloes Leilao[]
 
 model Lance {
   id        Int    @id @default(autoincrement())
