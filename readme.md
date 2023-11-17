@@ -1,6 +1,6 @@
 Um leiloeiro contratou nossa turma de POO II para desenvolver um sistema de leilões que tem a seguinte modelagem:
 
-![alt text]([http://url/to/img.png](https://github.com/henriquewaisman/oop2-test2/blob/main/opp2.png))
+![class diagram](https://github.com/henriquewaisman/oop2-test2/blob/main/opp2.png)
 
 Diagrama de Classe Leilão | UML: modelagem de soluções | Alura - Cursos  online de tecnologia
 
