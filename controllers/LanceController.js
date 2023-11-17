@@ -1,16 +1,15 @@
 // controllers/LanceController.js
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+const LanceService = require('../services/LanceService');
 
 module.exports = {
   async criarLance(req, res) {
     const { valor, usuarioId, leilaoId } = req.body;
-    const lance = await prisma.lance.create({ data: { valor, usuarioId, leilaoId } });
+    const lance = await LanceService.criarLance(valor, usuarioId, leilaoId);
     res.json(lance);
   },
 
   async listarLances(req, res) {
-    const lances = await prisma.lance.findMany();
+    const lances = await LanceService.listarLances();
     res.json(lances);
   },
 };
